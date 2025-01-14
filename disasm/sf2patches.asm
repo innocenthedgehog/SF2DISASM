@@ -57,7 +57,7 @@ FIX_KARNA_INCREASED_DOUBLE:          equ 1   ; 1 = No increased double, 2 = Shee
 FIX_KIWI_BREATH_UPGRADE_LEVELS:      equ 1   ; Kiwi's breath upgrades are based on effective rather than current level.
 FIX_LABYRINTH_DELETION:              equ 1   ; Prevents a section of the labyrinth from being deleted due to AI region activation.
 FIX_MISSING_RANDOM_BATTLES:          equ 1   ; Adds zone events for random battles without.
-FIX_MOVEMENT_GLITCH:                 equ 1   ; The movement glitch is used in battles to reach places which are out of the controlled character's moving boundaries.
+FIX_MOVEMENT_GLITCH:                 equ 0   ; The movement glitch is used in battles to reach places which are out of the controlled character's moving boundaries.
 FIX_PRISM_FLOWER_OVERWORLD_ENTRANCE: equ 1   ; On Map 77, walking to the right on the tile closest to the bottom mountain brings the player into the Prism Flower battle rather than to the world map to the right.
 FIX_RANGED_COUNTER_EXP:              equ 1   ; Switches focus to ally target before giving EXP if a counterattack occurred.
 FIX_SEARCH_IN_BATTLE:                equ 1   ; Restores the ability to search chests during battle.
@@ -89,21 +89,21 @@ SKIP_WITCH_DIALOGUE:                equ 0
 ;ADDITIONAL_EQUIPEFFECTS:            equ 1       ; Add new equipeffects to offer more options (Set ATT, Increase Resistance, Decrease Double...)
 AGILITY_AFFECTS_CHANCE_TO_DODGE:    equ 0       ; Adjust chance to dodge proportionally to the difference between the attacker's and the target's current AGI.
 ALL_ALLIES_JOINED:                  equ 0       ; All allies join from the beginning
-DIAGONAL_LASERS:                    equ 0       ; Allows laser based enemies to fire in 8 directions (Up, Up-Left, Left, Down-Left, etc).
-DIFFICULTY_FACTORS:                 equ 0       ; Allow 4 distinct difficulties.
+DIAGONAL_LASERS:                    equ 1       ; Allows laser based enemies to fire in 8 directions (Up, Up-Left, Left, Down-Left, etc).
+DIFFICULTY_FACTORS:                 equ 1       ; Allow 4 distinct difficulties.
 EXPANDED_RANGES:                    equ 1       ; Weapons/spells can have ranges up to 7 and spell radii up to 4.
-LEARN_SPELL_AT_PROMOTION:           equ 0       ; Allow learning 1 spell immediately upon promotion.
+LEARN_SPELL_AT_PROMOTION:           equ 1       ; Allow learning 1 spell immediately upon promotion.
 MUSCLE_MAGIC:                       equ 0       ; 0 = OFF, 1-256 = spell power increased by (muscleMagicStat * n) / 256
 MUSCLE_MAGIC_STAT:                  equ 5       ; 0 = Max HP, 1 = Current HP, 2 = Max MP, 3 = Current MP, 4 = Base ATT, 5 = Current ATT, 6 = Base DEF, 7 = Current DEF, 8 = Base AGI, 9 = Current AGI
-ORIGINAL_TAROS_INVULNERABILITY:     equ 0       ; 0 = OFF, 1 = Japanese version behavior (i.e, Bowie must continually attack to keep invulnerability off), 2 = SFCD behavior (invulnerability stays off for the remainder of the battle)
-PER_LEVEL_CHURCH_COST:              equ 0       ; Raise/Cure cost based on ally level (double cost per promo level.)
-PERCENT_POISON_DAMAGE:              equ 0       ; 1-100 = n% of max HP
+ORIGINAL_TAROS_INVULNERABILITY:     equ 1       ; 0 = OFF, 1 = Japanese version behavior (i.e, Bowie must continually attack to keep invulnerability off), 2 = SFCD behavior (invulnerability stays off for the remainder of the battle)
+PER_LEVEL_CHURCH_COST:              equ 1       ; Raise/Cure cost based on ally level (double cost per promo level.)
+PERCENT_POISON_DAMAGE:              equ 20       ; 1-100 = n% of max HP
 PLAYER_DEFEAT_IS_GAME_OVER:         equ 0       ; On player defeat, rather than halve the gold and return to town, reset the game.
 SEND_DESTROYED_ITEMS_TO_DEALS:      equ 1       ; Add item that was destroyed upon usage to shop deals if rare and if not a consumable.
 SEND_DROPPED_ITEMS_TO_CARAVAN:      equ 1       ; If character inventory is full, add dropped item to the Caravan instead of shop deals, regardless of rarity. If the Caravan itself is full, then drops follow the usual routine: go to deals if rare, or become lost completely if not rare.
 SPELLS_REFRESH_STATUS_COUNTERS:     equ 1       ; Boost, Slow, and Attack spells refresh status counters instead of failing, as long as the counter is increased by at least 1. Battle messages display the actual regained stats values.
 TRADEABLE_ITEMS:                    equ 0       ; Allow trading items in battle without full inventory.
-TRAP_DAMAGE_RAISES_WITH_DIFFICULTY: equ 0       ; Increase Laser/Burst Rock damage with difficulty.   Normal:100%  Hard:125%  Super: 150%  Ouch: 175%
+TRAP_DAMAGE_RAISES_WITH_DIFFICULTY: equ 1       ; Increase Laser/Burst Rock damage with difficulty.   Normal:100%  Hard:125%  Super: 150%  Ouch: 175%
 
 
 ; Special screens
@@ -111,7 +111,7 @@ CHAPTER_SCREEN:                     equ 0       ; Patch implementation with temp
 
 
 ; AI enhancements
-HEALER_AI_ENHANCEMENTS:             equ 0       ; See SF2_AI_Healing_Rewrite.txt for more details.
+HEALER_AI_ENHANCEMENTS:             equ 1       ; See SF2_AI_Healing_Rewrite.txt for more details.
 SUPPORT_AI_ENHANCEMENTS:            equ 1       ; Increase support spell options enemies can use.
 
 
@@ -129,7 +129,7 @@ EXTENDED_SPELL_NAMES:               equ 1       ; Increases the maximum number o
 EXTENDED_STATUS:                    equ 1       ; Display additional information on the member screen: Promotion indicator, Critical hit type and chance, Double and Counter chances, Resistance levels, and Movetype name.
 FULL_CLASS_NAMES:                   equ 1       ; Remodels the member status and members list screens in order to fit fully spelled out class names which are also displayed in dialogues, while the classic shorthands are still used in places where space is limited.
 SHOW_ALL_SPELLS_IN_MEMBER_SCREEN:   equ 1       ; All spells now appears on the member status screen regardless of whether they are affected by silence. (Without modifications to spell definitions, this impacts enemy-only spells.)
-SHOW_EFFECTIVE_LEVEL:               equ 1       ; Effective level (i.e., current level + promoted extra levels if promoted) is shown for allies instead of current level.
+SHOW_EFFECTIVE_LEVEL:               equ 0       ; Effective level (i.e., current level + promoted extra levels if promoted) is shown for allies instead of current level.
 SHOW_ENEMY_LEVEL:                   equ 1       ; The enemy's current level is shown on the member status screen.
 SHOW_STATUS_EFFECT_COUNTER:         equ 1       ; Shows status effect counter values next to the corresponding tiles on the member status screen.
 THREE_DIGITS_STATS:                 equ 1       ; Remodels the member status screen and mini status window to make room for 3 digits stat values.

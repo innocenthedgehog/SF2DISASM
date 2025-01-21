@@ -3965,6 +3965,7 @@ GROWTHCURVE_LATE: equ 2
 GROWTHCURVE_EARLY: equ 3
 GROWTHCURVE_MIDDLE: equ 4
 GROWTHCURVE_EARLYANDLATE: equ 5
+GROWTHCURVE_VERYLATE: equ 6
 
 ; ---------------------------------------------------------------------------
 

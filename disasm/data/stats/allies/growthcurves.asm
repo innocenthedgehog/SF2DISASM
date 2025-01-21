@@ -162,3 +162,34 @@ table_StatGrowthCurves:
                 dc.w 243, 12            ;  level 29
                 dc.w 256, 13            ;  level 30
                 
+                ; Very Late
+                dc.w 3, 3               ;  level 2
+                dc.w 6, 3              ;  level 3
+                dc.w 9, 3              ;  level 4
+                dc.w 12, 3              ;  level 5
+                dc.w 16, 4              ;  level 6
+                dc.w 19, 3              ;  level 7
+                dc.w 23, 4              ;  level 8
+                dc.w 27, 4              ;  level 9
+                dc.w 31, 4              ;  level 10
+                dc.w 35, 4              ;  level 11
+                dc.w 39, 4              ;  level 12
+                dc.w 43, 4              ;  level 13
+                dc.w 47, 4              ;  level 14
+                dc.w 51, 4             ;  level 15
+                dc.w 57, 6             ;  level 16
+                dc.w 65, 8             ;  level 17
+                dc.w 75, 10             ;  level 18
+                dc.w 87, 12             ;  level 19
+                dc.w 101, 14             ;  level 20
+                dc.w 115, 10            ;  level 21
+                dc.w 130, 10            ;  level 22
+                dc.w 145, 10            ;  level 23
+                dc.w 160, 10            ;  level 24
+                dc.w 175, 9             ;  level 25
+                dc.w 190, 11            ;  level 26
+                dc.w 206, 10            ;  level 27
+                dc.w 222, 11            ;  level 28
+                dc.w 238, 10            ;  level 29
+                dc.w 256, 12            ;  level 30
+

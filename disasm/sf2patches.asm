@@ -79,7 +79,7 @@ NO_AI_JARO:                         equ 0       ;
 NO_AI_PETER:                        equ 0       ; 
 NO_DARKNESS_IN_CAVES:               equ 0       ; The darkness gimmick in caves is disabled.
 NO_RANDOM_BATTLES:                  equ 0       ; 0 = Battles    1 = No Battles
-RECRUIT_ALL_CREED_CHARACTERS:       equ 1       ; lets you recruit all four of them at any time after leaving Floor World.
+RECRUIT_ALL_CREED_CHARACTERS:       equ 0       ; lets you recruit all four of them at any time after leaving Floor World.
 SKIP_SEGA_LOGO:                     equ 0
 SKIP_GAME_INTRO:                    equ 0
 SKIP_TITLE_SCREEN:                  equ 0
@@ -88,13 +88,13 @@ SKIP_WITCH_DIALOGUE:                equ 0
 
 ; Misc. features
 ;ADDITIONAL_EQUIPEFFECTS:            equ 1       ; Add new equipeffects to offer more options (Set ATT, Increase Resistance, Decrease Double...)
-AGILITY_AFFECTS_CHANCE_TO_DODGE:    equ 0       ; Adjust chance to dodge proportionally to the difference between the attacker's and the target's current AGI.
+AGILITY_AFFECTS_CHANCE_TO_DODGE:    equ 1       ; Adjust chance to dodge proportionally to the difference between the attacker's and the target's current AGI.
 ALL_ALLIES_JOINED:                  equ 0       ; All allies join from the beginning
 DIAGONAL_LASERS:                    equ 1       ; Allows laser based enemies to fire in 8 directions (Up, Up-Left, Left, Down-Left, etc).
 DIFFICULTY_FACTORS:                 equ 1       ; Allow 4 distinct difficulties.
 EXPANDED_RANGES:                    equ 1       ; Weapons/spells can have ranges up to 7 and spell radii up to 4.
 LEARN_SPELL_AT_PROMOTION:           equ 1       ; Allow learning 1 spell immediately upon promotion.
-MUSCLE_MAGIC:                       equ 0       ; 0 = OFF, 1-256 = spell power increased by (muscleMagicStat * n) / 256
+MUSCLE_MAGIC:                       equ 84       ; 0 = OFF, 1-256 = spell power increased by (muscleMagicStat * n) / 256
 MUSCLE_MAGIC_STAT:                  equ 5       ; 0 = Max HP, 1 = Current HP, 2 = Max MP, 3 = Current MP, 4 = Base ATT, 5 = Current ATT, 6 = Base DEF, 7 = Current DEF, 8 = Base AGI, 9 = Current AGI
 ORIGINAL_TAROS_INVULNERABILITY:     equ 1       ; 0 = OFF, 1 = Japanese version behavior (i.e, Bowie must continually attack to keep invulnerability off), 2 = SFCD behavior (invulnerability stays off for the remainder of the battle)
 PER_LEVEL_CHURCH_COST:              equ 1       ; Raise/Cure cost based on ally level (double cost per promo level.)
@@ -123,7 +123,7 @@ EXTENDED_BATTLE_TURN_UPDATE:        equ 1       ; Trigger regions, activate AI, 
 
 
 ; SF1 mechanics
-SF1_LEVELUP:                        equ 0       ; Reproduces the stat gain calculations from SF1 using SF2 ally stat blocks and growthcurves, with modified parameters to better suit SF2's higher growth values.
+SF1_LEVELUP:                        equ 1       ; Reproduces the stat gain calculations from SF1 using SF2 ally stat blocks and growthcurves, with modified parameters to better suit SF2's higher growth values.
 SF1_LEVELUP_RNG_CAP:                equ 8       ; Randomization range = stat target value ± (stat target value / 8), capped to SF1_LEVELUP_RNG_CAP. Vanilla SF1 default = 4
 LEARN_SPELLS_BASED_ON_TOTAL_LEVEL:  equ 1       ; Considers promoted at level when learning spells from the first list (i.e., the base class's.)
 

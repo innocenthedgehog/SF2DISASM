@@ -34,3 +34,4 @@ table_FullClassNames:
                 className "Robot"
                 className "Golem"
                 className "Red Baron"
+                className "Sorcerer"

@@ -181,7 +181,7 @@ table_AllyStartDefinitions:
                     NOTHING, &
                     NOTHING
                 
-                startClass SORC         ; 21: TAYA
+                startClass TAYA         ; 21: TAYA
                 startLevel 11
                 startItems &
                     INDRA_STAFF|EQUIPPED, &

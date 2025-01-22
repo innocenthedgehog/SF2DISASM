@@ -284,6 +284,7 @@ cs_52938:       textCursor 952
                 nextText $0,ALLY_SLADE  ; "But, I didn't know all this{N}would happen.{W2}"
                 nextSingleText $0,ALLY_SLADE ; "Please take me with you.{W1}"
                 nextSingleText $FF,255  ; "{CLEAR}{LEADER} decides to take{N}{NAME;5} with him.{W1}{CLEAR}"
+                joinForceAI ALLY_SLADE,$FFFF ; 0054 JOIN FORCE WITH AI
                 setActscriptWait ALLY_SLADE,eas_Jump
                 setActscript ALLY_SLADE,eas_Jump
                 nextText $0,ALLY_SLADE  ; "Thanks.  I promise to help{N}you.{W2}"

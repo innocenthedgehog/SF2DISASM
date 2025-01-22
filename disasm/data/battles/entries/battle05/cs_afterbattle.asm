@@ -23,6 +23,7 @@ abcs_battle05:  textCursor 2332
                 nextText $0,ALLY_SLADE  ; "The knight said that King{N}Galam took the other jewel{N}with him.{W2}"
                 nextSingleText $0,ALLY_SLADE ; "{LEADER}, I'll go to{N}Granseal with you.{W1}"
                 join ALLY_SLADE
+                joinForceAI ALLY_SLADE,$0 ; 0054 JOIN FORCE WITH AI
                 nextText $0,ALLY_SLADE  ; "I have an obligation to find{N}the other jewel!{W2}"
                 nextSingleText $0,ALLY_SLADE ; "Let's go to Granseal!{W1}"
                 clearF 73               ; Slade is a follower

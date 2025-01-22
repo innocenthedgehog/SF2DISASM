@@ -8,7 +8,7 @@ list_MithrilWeaponClasses:
                 classes HERO, BDBT
                 classes PLDN, PGNT
                 classes GLDT
-                classes WIZ, SORC
+                classes WIZ, SORC, TAYA
                 classes VICR
                 classes SNIP, BRGN, BWNT
                 classes NINJ

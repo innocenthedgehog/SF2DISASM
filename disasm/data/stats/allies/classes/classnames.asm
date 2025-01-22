@@ -36,7 +36,7 @@ table_ClassNames:
                 className "RDBN"
                 
             if (STANDARD_BUILD&EXPANDED_CLASSES=1)
-                className "32"
+                className "SORC"
                 className "33"
                 className "34"
                 className "35"

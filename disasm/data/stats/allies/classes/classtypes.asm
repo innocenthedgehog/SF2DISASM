@@ -39,7 +39,7 @@ table_ClassTypes:
                 classType REDBARON      ; 31: RDBN
                 
             if (STANDARD_BUILD&EXPANDED_CLASSES=1)
-                classType PROMO         ; 32: 
+                classType SPECIAL       ; 32: TAYA
                 classType PROMO         ; 33: 
                 classType PROMO         ; 34: 
                 classType PROMO         ; 35: 

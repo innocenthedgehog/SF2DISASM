@@ -169,10 +169,10 @@ table_ClassDefinitions:
                 
             if (STANDARD_BUILD&EXPANDED_CLASSES=1)
                     
-                mov 6                   ; 32: 
-                resistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_NONE
-                moveType   REGULAR
-                prowess    CRITICAL_NONE|DOUBLE_1IN32|COUNTER_1IN32
+                mov 5                   ; 32: TAYA
+                resistance WIND_NONE|LIGHTNING_MINOR|ICE_MINOR|FIRE_MINOR|NEUTRAL_NONE|STATUS_NONE
+                moveType   MAGE
+                prowess    CRITICAL125_1IN16|DOUBLE_1IN32|COUNTER_1IN16
                     
                 mov 6                   ; 33: 
                 resistance WIND_NONE|LIGHTNING_NONE|ICE_NONE|FIRE_NONE|NEUTRAL_NONE|STATUS_NONE

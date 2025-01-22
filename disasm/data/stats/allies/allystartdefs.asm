@@ -96,7 +96,7 @@ table_AllyStartDefinitions:
                 startClass BDMN         ; 10: LUKE
                 startLevel 14
                 startItems &
-                    MIDDLE_SWORD|EQUIPPED, &
+                    LONG_SWORD|EQUIPPED, &
                     NOTHING, &
                     NOTHING, &
                     NOTHING
@@ -113,7 +113,7 @@ table_AllyStartDefinitions:
                 startLevel 19
                 startItems &
                     STEEL_LANCE|EQUIPPED, &
-                    NOTHING, &
+                    SPEAR, &
                     NOTHING, &
                     NOTHING
                 
@@ -128,7 +128,7 @@ table_AllyStartDefinitions:
                 startClass KNTE         ; 14: ERIC
                 startLevel 24
                 startItems &
-                    STEEL_LANCE|EQUIPPED, &
+                    POWER_SPEAR|EQUIPPED, &
                     NOTHING, &
                     NOTHING, &
                     NOTHING
@@ -201,7 +201,7 @@ table_AllyStartDefinitions:
                 startLevel 12
                 startItems &
                     CHROME_LANCE|EQUIPPED, &
-                    NOTHING, &
+                    JAVELIN, &
                     NOTHING, &
                     NOTHING
                 
@@ -233,7 +233,7 @@ table_AllyStartDefinitions:
                 startLevel 19
                 startItems &
                     MAGE_STAFF|EQUIPPED, &
-                    NOTHING, &
+                    RIGHT_OF_HOPE, &
                     NOTHING, &
                     NOTHING
                 
@@ -246,7 +246,7 @@ table_AllyStartDefinitions:
                     NOTHING
                 
                 startClass GLM          ; 29: CLAUDE
-                startLevel 14
+                startLevel 16
                 startItems &
                     NOTHING, &
                     NOTHING, &

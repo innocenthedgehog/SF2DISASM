@@ -138,7 +138,7 @@ EXTENDED_STATUS:                    equ 1       ; Display additional information
 FULL_CLASS_NAMES:                   equ 1       ; Remodels the member status and members list screens in order to fit fully spelled out class names which are also displayed in dialogues, while the classic shorthands are still used in places where space is limited.
 SHOW_ALL_SPELLS_IN_MEMBER_SCREEN:   equ 1       ; All spells now appears on the member status screen regardless of whether they are affected by silence. (Without modifications to spell definitions, this impacts enemy-only spells.)
 SHOW_EFFECTIVE_LEVEL:               equ 0       ; Effective level (i.e., current level + promoted extra levels if promoted) is shown for allies instead of current level.
-SHOW_ENEMY_LEVEL:                   equ 1       ; The enemy's current level is shown on the member status screen.
+SHOW_ENEMY_LEVEL:                   equ 0       ; The enemy's current level is shown on the member status screen.
 SHOW_STATUS_EFFECT_COUNTER:         equ 1       ; Shows status effect counter values next to the corresponding tiles on the member status screen.
 THREE_DIGITS_STATS:                 equ 1       ; Remodels the member status screen and mini status window to make room for 3 digits stat values.
 

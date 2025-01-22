@@ -1859,12 +1859,12 @@ SPELLELEMENTS_NUMBER: equ elementNumber
 
 ; enum BattleActionEngine_SpellEffects
 CHANCE_TO_CRITICAL_DEMON_BREATH: equ 0 ; no chance to critical hit
-CHANCE_TO_INFLICT_MUDDLE1: equ 5 ; 3/8 base chance to inflict muddle 1
-CHANCE_TO_INFLICT_MUDDLE2: equ 5 ; 3/8 base chance to inflict muddle 2
+CHANCE_TO_INFLICT_MUDDLE1: equ 2 ; 1/2 base chance to inflict muddle 1
+CHANCE_TO_INFLICT_MUDDLE2: equ 2 ; 1/2 base chance to inflict muddle 2
 CHANCE_TO_INFLICT_DESOUL: equ 5 ; 3/8 base chance to inflict desoul
-CHANCE_TO_INFLICT_SLOW: equ 5 ; 3/8 base chance to inflict slow
-CHANCE_TO_INFLICT_SILENCE: equ 5 ; 3/8 base chance to inflict silence
-CHANCE_TO_INFLICT_SLEEP: equ 5 ; 3/8 base chance to inflict sleep
+CHANCE_TO_INFLICT_SLOW: equ 2 ; 1/2 base chance to inflict slow
+CHANCE_TO_INFLICT_SILENCE: equ 2 ; 1/2 base chance to inflict silence
+CHANCE_TO_INFLICT_SLEEP: equ 2 ; 1/2 base chance to inflict sleep
 STATUSEFFECT_SPELL_EXP: equ 5
 CHANCE_TO_CRITICAL_BUBBLE_BREATH: equ 8 ; 1/8 chance to critical hit
 CHANCE_TO_CRITICAL_BOLT: equ 8 ; 1/8 chance to critical hit (Bolt, Raijin, Atlas, Holy Thunder, Odd-eye beam)
@@ -1894,7 +1894,7 @@ CHANCE_TO_DODGE_FOR_MUDDLED_ATTACKER: equ chanceToDodgeForMuddledAttacker ; 1/2 
 CHANCE_TO_INFLICT_CURSE_DAMAGE: equ 2 ; 1/2 chance to inflict curse damage
 CHANCE_TO_BREAK_USED_ITEM: equ 4 ; 1/4 chance to break used item
 CHANCE_TO_PERFORM_KIWI_FLAME_BREATH: equ 4 ; 1/4 chance to perform Kiwi's Flame Breath
-INACTION_CHANCE_CURSE: equ 4 ; 1/4 chance to be unable to attack due to being cursed
+INACTION_CHANCE_CURSE: equ 8 ; 1/8 chance to be unable to attack due to being cursed
 INACTION_CHANCE_STUN: equ 4 ; 1/4 chance to be unable to attack due to being stunned
 CHANCE_TO_DODGE_FOR_AIRBORNE_TARGET: equ chanceToDodgeForAirborneTarget ; 1/8 chance to dodge if target is flying or hovering, and attacker is not an archer
 CHANCE_TO_DODGE_DEFAULT: equ chanceToDodgeDefault ; 1/32 chance to dodge by default

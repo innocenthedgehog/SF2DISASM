@@ -1541,7 +1541,7 @@ MUSIC_MITHRIL_DIGGERS: equ 37
 MUSIC_CASTLE: equ 38
 MUSIC_HEADQUARTERS: equ 39
 MUSIC_MITULA_SHRINE: equ 40
-MUSIC_ENDING: equ 41
+MUSIC_TOWER_BATTLE: equ 41
 
 ; ---------------------------------------------------------------------------
 

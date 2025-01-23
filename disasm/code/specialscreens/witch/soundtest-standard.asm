@@ -79,7 +79,7 @@ table_Soundtracks:
                 dc.b MUSIC_HEADQUARTERS
                 dc.b MUSIC_MITULA_SHRINE
                 dc.b MUSIC_SAD_THEME_2
-                dc.b MUSIC_ENDING
+                dc.b MUSIC_TOWER_BATTLE
                 dc.b MUSIC_MITULA
                 dc.b MUSIC_ELVEN_TOWN
                 dc.b MUSIC_SAD_THEME_3

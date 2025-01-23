@@ -9,7 +9,7 @@ cs_EndingKiss:  hideText
                  ac_jump eas_Idle       ;   
                 ac_end
                 csWait 30
-                playSound MUSIC_ENDING
+                playSound MUSIC_MITULA_SHRINE
                 entityActions ALLY_BOWIE
                  moveUpRight 1
                 endActions

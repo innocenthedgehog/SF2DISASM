@@ -1,21 +1,21 @@
 
-; ASM FILE music41.asm :
-; 0x9BC1..0xAFC6 : Music 41
-Music_41:        db 0
+; ASM FILE music08.asm :
+; 0x9BC1..0xAFC6 : Music 08
+Music_42:        db 0
 		db 0
 		db 0
-		db 0BDh
-		dw Music_9_Channel_0
-		dw Music_9_Channel_1
-		dw Music_9_Channel_2
-		dw Music_9_Channel_3
-		dw Music_9_Channel_4
-		dw Music_9_Channel_5
-		dw Music_9_Channel_6
-		dw Music_9_Channel_7
-		dw Music_9_Channel_9
-		dw Music_9_Channel_9
-Music_9_Channel_0:
+		db 0BEh
+		dw Music_10_Channel_0
+		dw Music_10_Channel_1
+		dw Music_10_Channel_2
+		dw Music_10_Channel_3
+		dw Music_10_Channel_4
+		dw Music_10_Channel_5
+		dw Music_10_Channel_6
+		dw Music_10_Channel_7
+		dw Music_10_Channel_9
+		dw Music_10_Channel_9
+Music_10_Channel_0:
 		  stereo 0C0h
 		  inst 56
 		  vol 0Bh
@@ -402,7 +402,7 @@ Music_9_Channel_0:
 		  vol 0Ch
 		  setRelease 01h
 		mainLoopEnd
-Music_9_Channel_1:
+Music_10_Channel_1:
 		  stereo 040h
 		  inst 3
 		  vol 0Bh
@@ -700,7 +700,7 @@ Music_9_Channel_1:
 		        note  D6
 		        noteL D6,5
 		        waitL 43
-		  inst 25
+		  inst 16
 		  stereo 0C0h
 		  vol 09h
 		  setRelease 08h
@@ -715,7 +715,7 @@ Music_9_Channel_1:
 		        note  C5
 		        note  B4
 		        noteL E5,180
-		  inst 56
+		  inst 7
 		  vol 0Ch
 		  setRelease 01h
 		        noteL Ds6,6
@@ -759,7 +759,7 @@ Music_9_Channel_1:
 		  vol 0Bh
 		  setRelease 01h
 		mainLoopEnd
-Music_9_Channel_2:
+Music_10_Channel_2:
 		  stereo 0C0h
 		  inst 36
 		  vol 0Ch
@@ -873,7 +873,7 @@ Music_9_Channel_2:
 		        wait
 		        note  G3
 		        waitL 36
-		  inst 25
+		  inst 10
 		  vol 09h
 		  setRelease 01h
 		countedLoopStart 1
@@ -923,7 +923,7 @@ Music_9_Channel_2:
 		  vol 0Ch
 		  setRelease 01h
 		mainLoopEnd
-Music_9_Channel_3:
+Music_10_Channel_3:
 		  stereo 0C0h
 		  inst 4
 		  vol 0Ch
@@ -1462,7 +1462,7 @@ Music_9_Channel_3:
 		        note  G3
 		        note  G3
 		mainLoopEnd
-Music_9_Channel_4:
+Music_10_Channel_4:
 		  stereo 080h
 		  inst 26
 		  vol 0Ah
@@ -1740,7 +1740,7 @@ Music_9_Channel_4:
 		  vol 09h
 		  setRelease 01h
 		mainLoopEnd
-Music_9_Channel_5:
+Music_10_Channel_5:
 		  stereo 0C0h
 		mainLoopStart
 		countedLoopStart 14
@@ -1927,7 +1927,7 @@ Music_9_Channel_5:
 		        sampleL 2,12
 		        waitL 36
 		mainLoopEnd
-Music_9_Channel_6:
+Music_10_Channel_6:
 		  psgInst 00h
 		  setRelease 01h
 		  vibrato 059h
@@ -2440,7 +2440,7 @@ Music_9_Channel_6:
 		  psgInst 00h
 		        waitL    42
 		mainLoopEnd
-Music_9_Channel_7:
+Music_10_Channel_7:
 		  setRelease 01h
 		  vibrato 059h
 		mainLoopStart
@@ -3252,6 +3252,6 @@ Music_9_Channel_7:
 		  psgInst 00h
 		        waitL    42
 		mainLoopEnd
-Music_9_Channel_9:
+Music_10_Channel_9:
 		channel_end
 
